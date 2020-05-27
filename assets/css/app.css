@@ -42,7 +42,6 @@ body { font-family: 'Quicksand', sans-serif;}
 }
 
 .content-banner {
-    height: 100vh;
     margin-top: 20px;
 }
 .content-banner .container-banner {
@@ -53,12 +52,13 @@ body { font-family: 'Quicksand', sans-serif;}
 }
 .content-banner .container-banner .img-background {
     visibility: visible;
-    background-image: url('../imgs/img-banner.jpeg');
     background-repeat: no-repeat;
-    height: 100vh;
+}
+.content-banner .container-banner .img-background .img-back {    
+    height: auto;
+    max-width: 100%;
     background-size: contain;
 }
-
 .content-banner .container-banner .container-text-main {
     width: 100%;  
 }
@@ -100,6 +100,80 @@ h4::after {
       opacity: 0;
     }
   }
+
+
+  /*container home work */
+  .home-work {
+      background-color: #f5f7f8;
+      min-height: 100vh;
+      padding-top: 40px;
+  }
+
+  .home-work .container-home-work {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .home-work .container-home-work .text-home-work {
+      margin-bottom: 30px;
+  }
+  .home-work .container-home-work .text-home-work .text {
+      text-align: center;
+  }
+  .home-work .container-home-work .text-home-work .text:nth-child(1){
+      font-size: 16px; 
+      margin-bottom: 10px;
+      color: #f76052;
+      font-weight: 500;
+      text-transform: uppercase;     
+  }
+  .home-work .container-home-work .text-home-work .text:nth-child(2){
+    font-size: 16px;
+    line-height: 22px; 
+    font-weight: 500;     
+}
+
+  /*fim container home work*/
+
+  /*inicio section images*/
+  .home-work .container-home-work .container-projects {
+      margin-top: 40px;
+        display: flex; 
+        width: 100%;
+        justify-content: center;
+        align-content: center;   
+        align-content: space-around;
+        align-items: center;
+  }
+  .home-work .container-home-work .container-projects .project {
+    flex: 1;   
+    align-items: center;
+    align-content: space-around;
+  }
+   /*fim section images*/
+
+   .home-work .container-home-work .container-projects .project a img {
+       width: 100%;
+   }
+   .home-work .container-home-work .container-projects .project:hover {
+       background-color: red;
+   }
+
+   .portfolio-grid {
+    display: grid;
+    gap:2em;
+    justify-items: center;
+}
+
+.portfolio-grid figure {
+    text-align: center;
+}
+.img-portfolio {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
 
 @media(min-width:750px) {
     .topbar .container-topbar {
@@ -166,4 +240,46 @@ h4::after {
         color: #f76052;
         
     }
+    /*container home work */
+    .home-work {
+        padding-top: 60px;
+    } 
+
+    .home-work .container-home-work .text-home-work .text:nth-child(1){
+        font-size: 20px;
+        margin-bottom: 20px; 
+    }
+    .home-work .container-home-work .text-home-work .text:nth-child(2){
+        font-size: 18px; 
+    }
+
+    .portfolio-grid {
+        display: grid;
+        gap:2em;
+        justify-items: center;
+    }
+
+    .img-port {
+        width: 260px;
+        height: 180px;
+    }
+
+    .portfolio-grid {
+        display: grid;
+        gap:2em;
+        justify-content: center;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+    
+    .portfolio-grid figure {
+        text-align: center;
+    }
+    .img-portfolio {
+        width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    
+    /*fim container home work*/
 }
