@@ -19,13 +19,13 @@
         <nav class="navbar">
           <ul class="list">
             <li class="item">
-              <a href="#" class="link">Sobre</a>
+              <a href="#about-me" class="link">Sobre</a>
             </li>
             <li class="item">
-              <a href="" class="link">Projetos</a>
+              <a href="#home-work" class="link">Projetos</a>
             </li>
             <li class="item">
-              <a href="" class="link">Contato</a>
+              <a href="#contact-me" class="link">Links Github</a>
             </li>
           </ul>
         </nav>
@@ -52,28 +52,102 @@
       </div>
     </div>
   </section>
-  <section class="home-work">
+  <section class="about-me" id="about-me">
+    <div class="container-about-me">
+      <div class="text-about-me">
+        <h2 class="text">Um pouco sobre mim</h2>
+        <h2 class="text">
+          Graduada em Análise e Desenvolvimento de Sistemas e Técnica em Informática com ênfase em Desenvolvimento de Software, me aventuro no mundo da programação por um motivo simples: eu adoro criar coisas! E nada melhor do que a programação para permitir fazer isso. <br />
+          O desenvolvimento front-end une todas as minhas paixões: ele incorpora criatividade e solução de problemas e eu posso fazer isso buscando sempre a melhoria do meu código. <br />
+          Adoro aplicar os princípios de design responsivo e assistir minhas páginas encolherem nas telas de dispositivos móveis e ainda assim parecerem incríveis.E isso é estranhamente satisfatório. Eu acho que de certa forma eu sou como essas páginas: sou moldável, mas continuo intacta. <br/>
+          Minhas especialidades incluem habilidades em linguagens de programação, resolução de problemas e design responsivo.<br/>
+          Essas habilidades incluem: JavaScript, NodeJs, ReactJS, HTML, CSS, SQL, Bootstrap, SailsJs, Git/Github. <br />
+          Também gosto de compartilhar o que sei com outras pessoas desenvolvedoras, para isso mantenho uma página no Medium com temas relacionados a programação.<br/>
+          Busco sempre adquirir novas habilidades em outras linguagens de programação, a mais recente é Python, para a melhoria continua de desenvolvimento. </h2>
+      </div>
+    </div>
+  </section>
+  <section class="home-work" id="home-work">
     <div class="container-home-work">
       <div class="text-home-work">
         <h2 class="text">O que tenho feito Ultimamente</h2>
         <h3 class="text">Tenho dedicado meu tempo a criação de aplicações web, utilizando JavaScript, tanto no backend quanto frontend.</h3>
       </div>
       <div class="portfolio-grid">
-        <figure>
-          <img class="img-portfolio" src="./assets/imgs/imagem.jpg"/>
-          <figcaption>Projeto A</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./assets/imgs/imagem.jpg"/>
-          <figcaption>Projeto A</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./assets/imgs/imagem.jpg"/>
-          <figcaption>Projeto A</figcaption>
-        </figure>
+        <a href="https://covidativa.com/">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./assets/imgs/vida_ativa.jpg" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <div class="content-flip-card-back">
+                  <h1 class="text">Vida Ativa</h1> 
+                  <h2 class="text">Projeto desenvolvido para alunos de fisioterapia da UESPI para a conscientização de prática de atividade física como forma de aumentar a imunidade no período da pandemia.</h2>
+                <p></p> 
+                </div>
+              </div>
+            </div>
+          </div>
+      </a>
+
+      <a href="https://covidativa.com/">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/imgs/be_the_hero.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <div class="content-flip-card-back">
+                <h1 class="text">Be Hero</h1> 
+                <h2 class="text">Projeto com finalidade de ajudar Ong's</h2>
+              <p></p> 
+              </div>
+            </div>
+          </div>
+        </div>
+    </a>
+    <a href="https://covidativa.com/">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/imgs/probono.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <div class="content-flip-card-back">
+              <h1 class="text">Probono</h1> 
+              <h2 class="text">Projeto desenvolvido com finalidade de tornar o acesso ao direito mais justo.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+  </a>
       </div>
     </div>
   </section>
+  <section class="contact-me" id="contact-me">
+    <div class="container-contact-me">
+        <div class="text-contact-me">
+          <h1 class="text">Links dos projetos no Github</h1>
+          <div>
+            <span>Vida Ativa:</span>
+            <span><a href="https://github.com/thaisrmesquita/covid-ativa">https://github.com/thaisrmesquita/covid-ativa</a></span>
+            <br/><br />
+            <span>Be the Hero: </span>
+            <span><a href="https://github.com/thaisrmesquita/be-the-hero">https://github.com/thaisrmesquita/be-the-hero</a></span>
+            <br/><br />
+            <span>Probono:</span>
+            <span><a href="https://github.com/thaisrmesquita/probono">https://github.com/thaisrmesquita/probono</a></span>
+            <br/>
+          </div>
+        </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <h2 class="text">Desenvolvido por Thaís Ribeiro | 2020</h2>
+    </div>
+  </footer>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
